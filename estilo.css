@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf9f8;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+#cabecalho {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+#titulo-logo {
+    font-size: 32px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #222;
+}
+
+#titulo-logo span {
+    color: #c5a386; 
+}
+
+.lista-menu {
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.lista-menu li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.lista-menu li a:hover, #menu-atual {
+    color: #c5a386;
+    font-weight: bold;
+}
+
+/* Banner de destaque */
+#banner-promocional {
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/logo2.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.texto-banner h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.botao-banner {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Produtos */
+#conteudo-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#titulo-secao {
+    text-align: center;
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.grade-produtos {
+    display: grid; /* Grid Layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo automático */
+    gap: 30px;
+}
+
+.cartao-produto {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    transition: 0.3s;
+}
+
+.cartao-produto:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.container-imagem {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.container-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.nome-produto {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.preco-produto {
+    color: #c5a386;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.botao-comprar {
+    width: 100%;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+#suporte-fixo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+#link-whatsapp img {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #c5a386;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dica-flutuante {
+    position: absolute;
+    right: 70px;
+    top: 15px;
+    background: #c5a386;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
